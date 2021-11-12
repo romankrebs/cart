@@ -1,0 +1,90 @@
+.card {
+  width: 300px;
+  height: auto;
+  padding: 2rem 1rem;
+  box-shadow: 0 1px 5px 2px rgba(100, 100, 100, .1);
+  box-sizing: border-box;
+  text-align: center;
+}
+.card h3 {
+  font-size: 1.2rem;
+  font-family: Roboto, sans;
+  font-weight: 700;
+  color: rgb(80, 80, 80);
+  padding: 1rem 0;
+  margin: 0;
+  text-align: center;
+}
+.card p,
+.card p.alert {
+  font-size: 1rem;
+  font-family: Roboto, sans;
+  font-weight: 400;
+  color: rgb(100, 100, 100);
+  padding: .5rem 0;
+  margin: 0;
+  text-align: left;
+}
+.card p.alert {
+  color: rgb(100, 0, 0);
+}
+.card .price {
+  font-size: 2rem;
+  font-family: Roboto, sans;
+  font-weight: 700;
+  color: rgb(100, 100, 100);
+}
+.card img {
+  max-width: 160px;
+  height: auto;
+}
+.card .quanity {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  padding: 1rem 0;
+  align-items: center;
+}
+.card .quanity .number {
+  text-align: center;
+}
+.card .quanity .button {
+  border-radius: 2rem;
+  padding: .5rem 1rem;
+  font-size: 1rem;
+  border: 1px solid rgb(100, 100, 100);
+  color: rgb(100, 100, 100);
+  font-family: Roboto, sans;
+  text-align: center;
+  font-weight: 400;
+  box-sizing: border-box;
+  margin: 0 auto;
+  background-color: rgb(255, 255, 255);
+  transition: .5s color, .5s background-color;
+}
+.card .quanity .button:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  transition: .5s color, .5s background-color;
+  cursor: pointer;
+}
+input.dec {
+  border: 0;
+  font-family: Roboto, sans;
+  font-size: 1rem;
+  color:rgb(100, 100, 100);
+  height: 2.5rem;
+  border-bottom: 1px solid rgb(200, 200, 200);
+  outline: 0;
+  width: 3rem;
+}
+input.dec:focus {
+  border: 0;
+  border-bottom: 1px solid rgb(100, 100, 100);
+  outline: 0;
+}
+
+@media (max-width: 440px) {
+  .card {
+    width: 90vw;
+  }
+}
